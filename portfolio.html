@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Intern Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .project-card:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Hero Section -->
+    <section id="hero" class="hero-bg text-white min-h-screen flex items-center relative overflow-hidden">
+        <div id="vanta-globe" class="absolute inset-0"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-blue-300">Rusiru Bandara</span></h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-6">IT Student & Aspiring Developer</h2>
+                    <p class="text-lg mb-8 max-w-lg">Passionate about creating innovative solutions and eager to contribute my skills in a dynamic IT environment.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition duration-300">Contact Me</a>
+                        <a href="#projects" class="border-2 border-white hover:bg-white hover:text-blue-900 text-white px-6 py-3 rounded-lg font-medium transition duration-300">My Work</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center" data-aos="fade-left">
+                    <div class="relative">
+                        <img src="http://static.photos/technology/640x360/10" alt="Profile" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-white shadow-xl">
+                        <div class="absolute -bottom-2 -right-2 bg-blue-500 rounded-full p-3 shadow-lg">
+                            <i data-feather="code" class="text-white w-6 h-6"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <img src="http://static.photos/workspace/640x360/15" alt="About" class="rounded-lg shadow-xl w-full max-w-md mx-auto">
+                </div>
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <h3 class="text-2xl font-semibold mb-4">Who I Am</h3>
+                    <p class="text-gray-600 mb-6">I'm a third-year IT student at SIBA Campus with a passion for web development and problem-solving. My journey in IT began when I built my first website at 1st semester of campus, and since then I've been constantly expanding my knowledge and skills.</p>
+                    <p class="text-gray-600 mb-6">I thrive in collaborative environments and enjoy tackling complex challenges. My goal is to secure an internship where I can contribute meaningfully while learning from experienced professionals.</p>
+                    <div class="flex flex-wrap gap-4">
+                        
+                        <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+                            <div class="bg-blue-100 p-3 rounded-full mr-3">
+                                <i data-feather="book" class="text-blue-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">3 Projects</h4>
+                                <p class="text-sm text-gray-500">Completed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">My Skills</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skill Card 1 -->
+                <div class="skill-card bg-white rounded-xl shadow-md p-6 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-blue-500 mb-4">
+                        <i data-feather="code" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Web Development</h3>
+                    <p class="text-gray-600 mb-4">Building responsive and interactive websites using modern technologies.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">HTML5</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">CSS3</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Angular</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Tailwind</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 2 -->
+                <div class="skill-card bg-white rounded-xl shadow-md p-6 transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-blue-500 mb-4">
+                        <i data-feather="database" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Backend Development</h3>
+                    <p class="text-gray-600 mb-4">Creating robust server-side applications and APIs.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Node.js</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Laravel</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">MongoDB</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">MySQL</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Python</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 4 -->
+                <div class="skill-card bg-white rounded-xl shadow-md p-6 transition duration-300" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-blue-500 mb-4">
+                        <i data-feather="git-merge" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Version Control</h3>
+                    <p class="text-gray-600 mb-4">Collaborative development using industry-standard tools.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Git</span>
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">GitHub</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 5 -->
+                <div class="skill-card bg-white rounded-xl shadow-md p-6 transition duration-300" data-aos="fade-up" data-aos-delay="500">
+                    <div class="text-blue-500 mb-4">
+                        <i data-feather="layout" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">UI/UX Design</h3>
+                    <p class="text-gray-600 mb-4">Creating intuitive and visually appealing interfaces.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Figma</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 6 -->
+                <div class="skill-card bg-white rounded-xl shadow-md p-6 transition duration-300" data-aos="fade-up" data-aos-delay="600">
+                    <div class="text-blue-500 mb-4">
+                        <i data-feather="cloud" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Cloud Computing</h3>
+                    <p class="text-gray-600 mb-4">Deploying and managing cloud-based solutions.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">AWS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section - Perfectly Centered -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">My Projects</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            
+            <!-- Projects Grid - Centered Layout -->
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 justify-items-center">      
+                    <!-- Project 1 -->
+                    <div class="project-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 w-full max-w-sm" data-aos="fade-up" data-aos-delay="100">
+                        <div class="overflow-hidden">
+                            <img src="http://static.photos/technology/640x360/21" alt="E-commerce Mobile App" class="w-full h-48 object-cover transition duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold">E-commerce Mobile Application Design</h3>
+                                <a href="https://github.com/rusiru1231/Online-Marketplace-Design" class="text-blue-500 hover:text-blue-700">
+                                    <i data-feather="external-link" class="w-5 h-5"></i>
+                                </a>
+                            </div>
+                            <p class="text-gray-600 mb-4">Modern mobile application design for online marketplace with intuitive user interface and seamless shopping experience.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Figma</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 w-full max-w-sm" data-aos="fade-up" data-aos-delay="200">
+                        <div class="overflow-hidden">
+                            <img src="http://static.photos/technology/640x360/22" alt="AI Chatbot" class="w-full h-48 object-cover transition duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold">Student Management System</h3>
+                                <a href="https://github.com/rusiru1231/Student-Management-System" class="text-blue-500 hover:text-blue-700">
+                                    <i data-feather="external-link" class="w-5 h-5"></i>
+                                </a>
+                            </div>
+                            <p class="text-gray-600 mb-4">A lightweight and efficient Student Management System crafted with a Laravel-powered backend and an Angular-driven frontend, working together through RESTful APIs for smooth and reliable operations.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Laravel</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">Angular</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">PHP</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 w-full max-w-sm" data-aos="fade-up" data-aos-delay="300">
+                        <div class="overflow-hidden">
+                            <img src="http://static.photos/technology/640x360/23" alt="Weather Dashboard" class="w-full h-48 object-cover transition duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-semibold">Hotel Management System</h3>
+                                <a href="https://github.com/rusiru1231/Hotel-Management-System" class="text-blue-500 hover:text-blue-700">
+                                    <i data-feather="external-link" class="w-5 h-5"></i>
+                                </a>
+                            </div>
+                            <p class="text-gray-600 mb-4">An interactive Hotel Management System that combines a PHP-powered backend with a responsive frontend built using HTML, CSS, and JavaScript, designed to simplify reservations, guest management, and hotel administration.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">HTML</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">CSS</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">PHP</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Education</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <!-- Timeline Item 2 -->
+                <div class="relative pl-8 sm:pl-32 py-6 group" data-aos="fade-right" data-aos-delay="100">
+                    <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-gray-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-4 after:h-4 after:bg-blue-500 after:border-4 after:box-content after:border-gray-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                        <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-24 h-8 mb-3 sm:mb-0 text-blue-600 bg-blue-100 rounded-full">2023 - 2026</time>
+                        <div class="text-xl font-bold text-gray-900">SIBA Campus</div>
+                    </div>
+                    <div class="text-gray-500 ml-0 sm:ml-24">B.Sc. in Information Technology</div>
+                    <div class="text-gray-600 ml-0 sm:ml-24 mt-2">
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li>Expected graduation: September 2026</li>
+                            <li>Strong knowledge in Web development, Networking and cloud environment (AWS)</li>
+                            <li>Member of TechVerse Community at SIBA Campus</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="relative pl-8 sm:pl-32 py-6 group" data-aos="fade-right" data-aos-delay="200">
+                    <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-gray-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-4 after:h-4 after:bg-blue-500 after:border-4 after:box-content after:border-gray-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                        <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-24 h-8 mb-3 sm:mb-0 text-blue-600 bg-blue-100 rounded-full">2009 - 2022</time>
+                        <div class="text-xl font-bold text-gray-900">Sri Chandananda Buddhist College</div>
+                    </div>
+                    <div class="text-gray-600 ml-0 sm:ml-24 mt-2">
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li>G.C.E. Advanced Level (2022)</li>
+                            <li>G.C.E. Ordinary Level (2019)</li>
+                            <li>Memeber of Cadet team</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">I'm currently looking for internship opportunities. Feel free to reach out if you'd like to connect!</p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <div class="bg-white p-8 rounded-xl shadow-md h-full">
+                        <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i data-feather="mail" class="text-blue-500 w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Email</h4>
+                                    <p class="text-gray-600">rusirubandara408@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i data-feather="phone" class="text-blue-500 w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Phone</h4>
+                                    <p class="text-gray-600">+94 756264392 (Official)</p>
+                                    <p class="text-gray-600">+94 724018242 (WhatsApp)</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i data-feather="map-pin" class="text-blue-500 w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Location</h4>
+                                    <p class="text-gray-600">Kandy, Sri Lanka</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-10">
+                            <h4 class="font-medium text-gray-900 mb-4">Connect with me</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.linkedin.com/in/rusiru-bandara-abeykoon-4477a7343/" class="bg-gray-100 hover:bg-blue-100 p-3 rounded-full text-gray-700 hover:text-blue-600 transition duration-300">
+                                    <i data-feather="linkedin" class="w-5 h-5"></i>
+                                </a>
+                                <a href="https://github.com/rusiru1231" class="bg-gray-100 hover:bg-blue-100 p-3 rounded-full text-gray-700 hover:text-blue-600 transition duration-300">
+                                    <i data-feather="github" class="w-5 h-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <div class="bg-white p-8 rounded-xl shadow-md h-full">
+                        <h3 class="text-2xl font-semibold mb-6">Let's Work Together</h3>
+                        <p class="text-gray-600 mb-6">I'm excited to hear about potential opportunities where I can contribute my skills and continue learning. Whether you have a project in mind or just want to connect, I'd love to hear from you!</p>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i data-feather="clock" class="text-blue-500 w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-900">Availability</h4>
+                                <p class="text-gray-600">Currently available for internship opportunities starting September 2025</p>
+                            </div>
+                            <div class="mb-6">
+                                <a href="https://drive.google.com/file/d/1Npl0KCiubT-cPgTA8eyku7J-8QdBvOnY/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                    </svg> Download My CV
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">Rusiru Bandara</h2>
+                    <p class="text-gray-400 mt-2">Aspiring IT Student</p>
+                </div>
+                <div class="flex flex-col items-center md:items-end">
+                    <div class="flex space-x-6 mb-4">
+                        <a href="#hero" class="text-gray-400 hover:text-white transition duration-300">Home</a>
+                        <a href="#about" class="text-gray-400 hover:text-white transition duration-300">About</a>
+                        <a href="#skills" class="text-gray-400 hover:text-white transition duration-300">Skills</a>
+                        <a href="#projects" class="text-gray-400 hover:text-white transition duration-300">Projects</a>
+                        <a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a>
+                    </div>
+                    <p class="text-gray-400 text-sm">© 2025 Rusiru Bandara. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#hero" class="fixed bottom-6 right-6 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition duration-300 hidden" id="back-to-top">
+        <i data-feather="arrow-up" class="w-5 h-5"></i>
+    </a>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Initialize Vanta.js
+        VANTA.GLOBE({
+            el: "#vanta-globe",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x3b82f6,
+            backgroundColor: 0x1e3c72,
+            size: 0.8
+        });
+
+        // Back to top button
+        window.addEventListener('scroll', function() {
+            var backToTop = document.getElementById('back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTop.classList.remove('hidden');
+            } else {
+                backToTop.classList.add('hidden');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Feather icons
+        feather.replace();
+    </script>
+</body>
+</html>
